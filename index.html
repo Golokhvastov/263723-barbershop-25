@@ -64,8 +64,8 @@
         <figure class="gallery-content">
           <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
         </figure>
-        <span class="button gallery-button gallery-button-back">Назад</span>
-        <span class="button gallery-button gallery-button-next">Вперед</span>
+        <button type="button" class="button gallery-button gallery-button-back">Назад</button>
+        <button type="button" class="button gallery-button gallery-button-next">Вперед</button>
       </section>
 
        <section class="contacts">
@@ -87,7 +87,27 @@
       <section class="appointment">
         <h2>Записаться</h2>
         <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <!-- Здесь будет форма -->
+        <form class="appointment-form" action="index.html" method="post">
+          <ul class="appointment-form-list">
+            <li class="appointment-form-item">
+              <label for="data-appointment">Дата</label>
+              <input type="text" name="data-appointment" value="" placeholder="08.10.2017" id="data-appointment">
+            </li>
+            <li class="appointment-form-item">
+              <label for="time-appointment">Время</label>
+              <input type="text" name="time-appointment" value="" placeholder="10:00" id="time-appointment">
+            </li>
+            <li class="appointment-form-item">
+              <label for="name-appointment">Ваше имя</label>
+              <input type="text" name="name-appointment" value="" placeholder="Борода" id="name-appointment">
+            </li>
+            <li class="appointment-form-item">
+              <label for="phone-appointment">Телефон</label>
+              <input type="text" name="phone-appointment" value="" placeholder="+7 123-456-78-90" id="phone-appointment">
+            </li>
+          </ul>
+          <button type="submit" name="button" class="button button-appointment-form">Отправить</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
@@ -114,12 +134,13 @@
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
+      
       <span class="modal-close">x</span>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="img/map.jpg" width="766" height="560" alt="Адрес офиса компании: г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
       <span class="modal-close">x</span>
     </section>
   </body>
