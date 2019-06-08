@@ -18,7 +18,7 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link">Вход</li>
+          <li><a class="login-link" href="login.html">Вход</a> </li>
         </ul>
       </nav>
     </header>
@@ -87,26 +87,26 @@
       <section class="appointment">
         <h2>Записаться</h2>
         <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form class="appointment-form" action="index.html" method="post">
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <ul class="appointment-form-list">
             <li class="appointment-form-item">
-              <label for="data-appointment">Дата</label>
-              <input type="text" name="data-appointment" value="" placeholder="08.10.2017" id="data-appointment">
+              <label for="date-appointment">Дата</label>
+              <input id="date-appointment" type="text" name="date-appointment" value="" placeholder="08.10.2017">
             </li>
             <li class="appointment-form-item">
               <label for="time-appointment">Время</label>
-              <input type="text" name="time-appointment" value="" placeholder="10:00" id="time-appointment">
+              <input id="time-appointment" type="text" name="time-appointment" value="" placeholder="10:00">
             </li>
             <li class="appointment-form-item">
               <label for="name-appointment">Ваше имя</label>
-              <input type="text" name="name-appointment" value="" placeholder="Борода" id="name-appointment">
+              <input id="name-appointment" type="text" name="name-appointment" value="" placeholder="Борода">
             </li>
             <li class="appointment-form-item">
-              <label for="phone-appointment">Телефон</label>
-              <input type="text" name="phone-appointment" value="" placeholder="+7 123-456-78-90" id="phone-appointment">
+              <label for="tel-appointment">Телефон</label>
+              <input id="tel-appointment" type="text" name="tel-appointment" value="" placeholder="+7 123-456-78-90">
             </li>
           </ul>
-          <button type="submit" name="button" class="button button-appointment-form">Отправить</button>
+          <button class="button button-appointment-form" type="submit">Отправить</button>
         </form>
       </section>
     </main>
@@ -134,14 +134,37 @@
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      
-      <span class="modal-close">x</span>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <ul class="login-form-list">
+          <li class="login-form-item">
+            <label class="visually-hidden" for="user-login">Логин</label>
+            <input class="login-icon-user" id="user-login" type="text" name="user" placeholder="Логин">
+          </li>
+          <li class="login-form-item">
+            <label class="visually-hidden" for="password-login">Пароль</label>
+            <input class="login-icon-password" id="password-login" type="text" name="password" placeholder="Пароль">
+          </li>
+        </ul>
+        <label>
+          <input type="checkbox" name="remember-password" checked>
+          Запомните меня
+        </label>
+        <a class="restore-password" href="#">Я забыл пароль!</a>
+        <button class="button button-login" type="submit" name="button">Войти</button>
+      </form>
+      <button class="modal-close" type="button">
+        Закрыть
+      </button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img src="img/map.jpg" width="766" height="560" alt="Адрес офиса компании: г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
-      <span class="modal-close">x</span>
+      <p>
+        <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button class="modal-close" type="button">
+        Закрыть
+      </button>
     </section>
   </body>
 </html>
