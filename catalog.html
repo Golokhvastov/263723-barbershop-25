@@ -36,17 +36,73 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <ul>
-          <li class="filters-item">
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+          <section class="producers">
             <h3>Производители</h3>
-            <!-- Здесь будет форма -->
-          </li>
-          <li class="filters-item">
+            <ul>
+              <li class="filters-item">
+                <label>
+                  <input class="filters-input checkbox" type="checkbox" name="Baxter-of-California" checked>
+                  Baxter of California
+                </label>
+              </li>
+              <li class="filters-item">
+                <label>
+                  <input class="filters-input checkbox" type="checkbox" name="Mr-Natty">
+                  Mr Natty
+                </label>
+              </li>
+              <li class="filters-item">
+                <label>
+                  <input class="filters-input checkbox" type="checkbox" name="Suavecito" checked>
+                  Suavecito
+                </label>
+              </li>
+              <li class="filters-item">
+                <label>
+                  <input class="filters-input checkbox" type="checkbox" name="Malin-Goetz">
+                  Malin+Goetz
+                </label>
+              </li>
+              <li class="filters-item">
+                <label>
+                  <input class="filters-input checkbox" type="checkbox" name="Murrays">
+                  Murray’s
+                </label>
+              </li>
+              <li class="filters-item">
+                <label>
+                  <input class="filters-input checkbox" type="checkbox" name="American-Crew" checked>
+                  American Crew
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section class="product-groups">
             <h3>Группы товаров</h3>
-            <!-- Здесь будет форма -->
-          </li>
-        </ul>
-        <a href="#" class="button filters-button">Показать</a>
+            <ul>
+              <li class="filters-item">
+                <label>
+                  <input class="filters-input radio" type="radio" name="product-group" value="Shaving-accessories">
+                  Бритвенные принадлежности
+                </label>
+              </li>
+              <li class="filters-item">
+                <label>
+                  <input class="filters-input radio" type="radio" name="product-group" value="Care-products" checked>
+                  Средства для ухода
+                </label>
+              </li>
+              <li class="filters-item">
+                <label>
+                  <input class="filters-input radio" type="radio" name="product-group" value="Accessories">
+                  Аксессуары
+                </label>
+              </li>
+            </ul>
+          </section>
+          <button class="button button-filters-form" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="product-cards">
