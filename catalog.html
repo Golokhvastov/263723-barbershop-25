@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Средства для ухода</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body__not-index">
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
@@ -39,7 +42,7 @@
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
           <section class="producers">
             <h3>Производители</h3>
-            <ul>
+            <ul class="producers__list">
               <li class="filters-item">
                 <label>
                   <input class="filters-input checkbox" type="checkbox" name="Baxter-of-California" checked>
@@ -80,7 +83,7 @@
           </section>
           <section class="product-groups">
             <h3>Группы товаров</h3>
-            <ul>
+            <ul class="product-groups__list">
               <li class="filters-item">
                 <label>
                   <input class="filters-input radio" type="radio" name="product-group" value="Shaving-accessories">
@@ -224,10 +227,10 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item"><a href="#">1</a></li>
-          <li class="pagination-item pagination-item-current"><a>2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
+          <li class="pagination-item"><a class="button" href="#">1</a></li>
+          <li class="pagination-item pagination-item-current"><a class="button">2</a></li>
+          <li class="pagination-item"><a class="button" href="#">3</a></li>
+          <li class="pagination-item"><a class="button" href="#">4</a></li>
         </ul>
       </section>
     </main>
