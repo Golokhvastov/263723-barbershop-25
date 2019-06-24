@@ -16,15 +16,8 @@ body {
 }
 
 .body__not-index {
-  margin: 0;
-  padding: 0;
-
-  font-family: "PT Sans Narrow", Arial, sans-serif;
-  font-size: 14px;
   line-height: 18px;
-  font-weight: 700;
   color: #000000;
-  text-transform: uppercase;
 
   background-color: #f8f5f2;
   background-image: url("../img/pattern-light.jpg");
@@ -222,7 +215,6 @@ a {
 }
 
 .breadcrumbs {
-  font-size: 14px;
   line-height: 20px;
 
   list-style: none;
@@ -232,36 +224,69 @@ a {
   color: #000000;
 }
 
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
 .breadcrumbs-current {
   color: #aba9a7;
 }
+.filters-form fieldset {
+  border: none;
+}
 
-.filters-form h3 {
+.filters-form legend {
   font-size: 24px;
   line-height: 30px;
 }
 
-.producers__list,
-.product-groups__list {
+.filters-form ul {
   list-style: none;
 }
 
-.filters-item label:hover,
-.filters-item label:focus {
+.filter-input:hover + label,
+.filter-input:focus + label {
   color: #663d15;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+
+  opacity: 0.5;
 }
 
 .catalog-list {
   list-style: none;
 }
 
-.catalog-category,
-.catalog-item-title {
+.catalog-item {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.catalog-item:hover {
+  box-shadow: 3.2px 3.8px 25px 0 rgba(0, 1, 1, 0.3);
+}
+
+.catalog-item a {
   color: #000000;
 }
 
 .catalog-category {
   text-transform: none;
+}
+
+.catalog-item-price b {
+  line-height: 20px;
+  text-align: center;
+
+  background-color: #e5e5e5;
+}
+
+.catalog-item-price .button {
+  line-height: 20px;
+  color: #ffffff;
 }
 
 .pagination-list {
